@@ -141,12 +141,15 @@ nav>.logo{
     height: 90%;
     background-color: red;
     display: flex;
+    padding: 12px 0 0 15px;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
 }
 
 .box1-left{
     width: 50%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .box1-right{
