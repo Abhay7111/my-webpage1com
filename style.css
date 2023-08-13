@@ -49,3 +49,11 @@ nav>.logo{
     font-weight: 400;
     font-size: 2.3vw;
 }
+
+@media only screen and (max-width:270px){
+    #main{
+        background-color: red;
+        width: 100%;
+        height: 50%;
+    }
+}
