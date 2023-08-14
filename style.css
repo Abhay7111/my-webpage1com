@@ -3,6 +3,8 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
 }
 
 html,body{
@@ -10,6 +12,12 @@ html,body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    color: #000;
+    /* background-color: red; */
 }
 
 #main{
@@ -20,12 +28,15 @@ html,body{
     align-items: center;
     justify-content: center;
     padding: 7vh 0 0 0 ;
+    flex-direction: column;
+    z-index: 90;
+    scroll-behavior: smooth;
 }
 
 header{
     width: 100%;
     height: 7vh;
-    background-color: #A2678A;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +66,7 @@ nav>.logo{
 .logo>h2{
     font-weight:600;
     font-size: 2.3vw;
-    color: #fff;
+    color: #000;
 
 }
 
@@ -81,16 +92,17 @@ nav>.logo{
     padding: 4px 12px;
     border-radius: 5px;
     transition: all 0.8s;
-    color: #fff;
+    color: #000;
     font-size: 1.3em;
     cursor: pointer;
     border: 1px solid transparent;
 }
 
 .main-links>ul>li:hover{
-    background-color: #A2678A;
+    background-color: #fff;
     transition: all 0.8s;
-    border: 1px solid #fff;
+    color: #000;
+    border: 1px solid #000;
     border-radius: 20px 0px 20px 0px;
 }
 
@@ -118,13 +130,20 @@ nav>.logo{
 }
 
 .main-buttons>button:hover{
-    background-color: #A2678A;
+    background-color: #fff;
     transition: all 0.8s;
     border-radius: 15px 0px 15px 0px;
+    border: 1px solid #000;
 }
 
 .main-buttons>button:active{
     border-radius: 0px 15px 0px 15px;
+    border:1px solid #000;
+}
+
+#li-links>a{
+    text-decoration: none;
+    color: #000;
 }
 
 .page1{
@@ -154,6 +173,7 @@ nav>.logo{
     align-items: center;
     justify-content: center;
     /* background-color: green; */
+    z-index: 4;
 }
 
 .box1-right{
@@ -163,12 +183,44 @@ nav>.logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 }
 
 .box1-right>img{
     width: 100%;
-    opacity: 90%;
+    opacity: 100%;
+    scale: 1.2;
+    position: relative;
+    top: 65px;
+    z-index: 3;
+    animation: photoanimation1;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    transition: all 2px;
+}
 
+.box1-right>img:hover{
+    animation: photoanimation1;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    transition: all 2px;
+}
+
+@keyframes photoanimation1 {
+    0%{
+        transition: all ease-in 1.2s;
+        opacity: 80%;
+    }
+    50%{
+        transition: all ease-in 1.2s;
+        scale: 1;
+        opacity: 50%;
+        margin-left: 65px;
+    }
+    100%{
+        opacity: 80%;
+    }
+    
 }
 
 .box1-left>h1{
@@ -187,7 +239,62 @@ nav>.logo{
     top: -10vh;
 }
 
+.box1-left-p{
+    /* background-color: yellow; */
+    position: relative;
+    top: -9vh;
+    width: 100%;
+    height: auto;
+    padding: 5px 12px 40px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.box1-left-p>p{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.main-button{
+    /* background-color: red; */
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.main-button>button{
+    padding: 7px  50px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: all 0.7s;
+}
+
+.main-button>button:hover{
+    transition: all 0.7s;
+    border-radius: 40px 6px 40px 6px;
+}
+
+.main-button>button:active{
+    transition: all 0.7s;
+    border-radius: 6px 40px 6px 40px;
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
 
 @media only screen and (max-width:1080px){
     #main{
