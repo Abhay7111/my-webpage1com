@@ -7,6 +7,11 @@
     scroll-padding-top: 0px;
 }
 
+*::selection{
+    background-color: #fff;
+    color: #000;
+}
+
 html,body{
     background-color: #dadada;
     width: 100vw;
@@ -70,6 +75,11 @@ nav>.logo{
 
 }
 
+.logo>h2::selection{
+    background-color: #000;
+    color: #fff;
+}
+
 .main-links{
     /* background-color: red; */
     border-radius: 50px;
@@ -96,6 +106,11 @@ nav>.logo{
     font-size: 1.3em;
     cursor: pointer;
     border: 1px solid transparent;
+}
+
+.main-links>ul>li::selection , #li-links>a::selection{
+    background-color: #000;
+    color: #fff;
 }
 
 .main-links>ul>li:hover{
@@ -127,6 +142,11 @@ nav>.logo{
     border: 1px solid #fff;
     transition: all 0.8s;
     border-radius: 50px;
+}
+
+.main-buttons>button::selection{
+    background-color: #000;
+    color: #fff;
 }
 
 .main-buttons>button:hover{
