@@ -15,7 +15,7 @@ html,body{
 #main{
     width: 100%;
     height: auto;
-    background-color: #4D3C77;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@ nav>.logo{
 .page1-box1{
     width: 90%;
     height: 90%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     padding: 12px 0 0 15px;
     border-radius: 70px 0 70px 0;
@@ -149,28 +149,45 @@ nav>.logo{
 .box1-left{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* background-color: green; */
 }
 
 .box1-right{
     width: 50%;
     height: 100%;
-    background-color: #9e91be;
+    /* background-color: #9e91be; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1-right>img{
+    width: 100%;
+    opacity: 90%;
+
 }
 
 .box1-left>h1{
     color: #fff;
     font-size: 4.5em;
-    font-weight: 500;
-    
+    font-weight: 700;
+    margin-bottom: 75px;
+    padding: 10px 15px;
+    /* background-color: yellow; */
 }
 
 #hr1{
     width: 100%;
     height: auto;
     position: relative;
-    top: 2vh;
+    top: -10vh;
 }
+
+
 
 @media only screen and (max-width:1080px){
     #main{
