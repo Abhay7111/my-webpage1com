@@ -21,8 +21,7 @@ html,body{
 }
 
 html::-webkit-scrollbar{
-    color: #000;
-    /* background-color: red; */
+    z-index: 99;
 }
 
 #main{
@@ -46,7 +45,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 0px 15px;
-    z-index: 99;
+    z-index: 95;
     position: fixed;
 }
 
@@ -204,6 +203,7 @@ nav>.logo{
     align-items: center;
     justify-content: center;
     z-index: 3;
+    overflow: hidden;
 }
 
 .box1-right>img{
@@ -214,14 +214,7 @@ nav>.logo{
     top: 65px;
     z-index: 3;
     animation: photoanimation1;
-    animation-duration:5s;
-    animation-iteration-count: infinite;
-    transition: all 2px;
-}
-
-.box1-right>img:hover{
-    animation: photoanimation1;
-    animation-duration:4s;
+    animation-duration:2s;
     animation-iteration-count: infinite;
     transition: all 2px;
 }
@@ -233,9 +226,10 @@ nav>.logo{
     }
     50%{
         transition: all ease-in 1.2s;
-        scale: 1;
+        /* scale: 1; */
         opacity: 50%;
-        margin-left: 65px;
+        margin-left: 15px;
+        scroll-behavior: smooth;
     }
     100%{
         opacity: 80%;
@@ -290,7 +284,7 @@ nav>.logo{
 
 .main-button>button{
     padding: 7px  50px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     color: #fff;
     font-size: 1.1em;
     font-weight: 400;
@@ -298,6 +292,7 @@ nav>.logo{
     background-color: transparent;
     border-radius: 50px;
     transition: all 0.7s;
+    
 }
 
 .main-button>button:hover{
@@ -310,10 +305,20 @@ nav>.logo{
     border-radius: 6px 40px 6px 40px;
 }
 
+.box1-right-top{
+    color: #fff;
+    position: relative;
+    padding: 300px;
+    /* left: -40vw; */
+    background-color: red;
+    width: 100vw;
+    height: 100%;
+}
+
 .page2{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 
 @media only screen and (max-width:1080px){
@@ -421,3 +426,4 @@ nav>.logo{
         display: none;
     }
 }
+
