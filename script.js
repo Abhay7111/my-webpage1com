@@ -17,10 +17,10 @@ gsap.to("header",{
     scrollTrigger:{
         trigger:"header",
         scroller:"body",
-        markers:"true",
+        // markers:"true",
         start:"top -5%",
         end:"top -10%",
-        scrub:2,
+        scrub:1,
         top:"120px",
     },
 })
@@ -30,7 +30,7 @@ gsap.to("#main",{
     scrollTrigger:{
         trigger:"#main",
         scroll:".page1",
-        markers:"true",
+        // markers:"true",
         start:"top 10%",
         end:"top -20%",
         scrub:2,
@@ -44,10 +44,10 @@ gsap.to(".page2",{
     scrollTrigger:{
         trigger:".page2",
         scroller:"body",
-        markers:"true",
+        // markers:"true",
         start:"top -5%",
         end:"top -4vh",
-        scrub:4,
+        scrub:2,
         top:"120px",
     },
 })
