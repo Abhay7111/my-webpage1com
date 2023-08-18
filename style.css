@@ -540,7 +540,7 @@ nav>.logo {
     padding-right: 2px;
 }
 
-.box-in-img{
+.box-in-img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -548,7 +548,7 @@ nav>.logo {
     overflow: hidden;
 }
 
-#page3-img{
+#page3-img {
     width: 100%;
     border-radius: 50%;
     animation: photoanimation1;
@@ -558,7 +558,7 @@ nav>.logo {
     /* display: none; */
 }
 
-.main-text{
+.main-text {
     /* background-color: red; */
     width: 71.5%;
     height: 98%;
@@ -570,7 +570,7 @@ nav>.logo {
     overflow: hidden;
 }
 
-.heading-page3{
+.heading-page3 {
     background-color: transparent;
     flex-direction: column;
     width: 80%;
@@ -583,12 +583,12 @@ nav>.logo {
     gap: 8px;
 }
 
-.heading-page3>h3{
+.heading-page3>h3 {
     font-size: 2.6em;
     font-weight: 600;
 }
 
-.heading-page3>h4{
+.heading-page3>h4 {
     font-weight: 400;
     font-size: 1.5em;
     color: #dadada;
@@ -596,7 +596,7 @@ nav>.logo {
     font-style: italic;
 }
 
-.pairagraph-page3{
+.pairagraph-page3 {
     background-color: transparent;
     width: 76%;
     padding: 12px;
@@ -608,13 +608,13 @@ nav>.logo {
     left: 5px;
 }
 
-.pairagraph-page3>p{
+.pairagraph-page3>p {
     font-weight: 400;
     font-size: 0.9em;
     color: #dadada;
 }
 
-.page3-stars{
+.page3-stars {
     background-color: transparent;
     width: 130px;
     height: auto;
@@ -627,17 +627,17 @@ nav>.logo {
     top: -20px;
 }
 
-.page3-stars>a{
+.page3-stars>a {
     font-size: 1.6em;
     text-decoration: none;
     color: #fff;
 }
 
-.page3-stars>a:active{
+.page3-stars>a:active {
     color: red;
 }
 
-.page3-over-view{
+.page3-over-view {
     width: 60%;
     background-color: transparent;
     display: flex;
@@ -648,14 +648,14 @@ nav>.logo {
     top: 10px;
 }
 
-.page3-over-view>a{
+.page3-over-view>a {
     text-decoration: none;
     color: #dadada;
     font-size: 1.2em;
     font-weight: 400;
 }
 
-.page3-over-view>a>i{
+.page3-over-view>a>i {
     font-size: 1.6em;
     text-align: center;
     position: relative;
@@ -664,7 +664,7 @@ nav>.logo {
     margin-right: 8px;
 }
 
-.page3-over-view>a>i:active{
+.page3-over-view>a>i:active {
     color: red;
 }
 
