@@ -514,7 +514,7 @@ nav>.logo {
 
 #page3 {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: transparent;
     z-index: 80;
     padding: 20px 100px;
@@ -575,7 +575,7 @@ nav>.logo {
     background-color: transparent;
     flex-direction: column;
     width: 80%;
-    height: 50px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -589,9 +589,22 @@ nav>.logo {
     font-weight: 600;
 }
 
+.heading-page3>.marqtext {
+    font-weight: 400;
+    width: 300px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: #dadada;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
 .heading-page3>h4 {
     font-weight: 400;
-    font-size: 1.5em;
+    width: 360px;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: transparent;
     color: #dadada;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -635,7 +648,7 @@ nav>.logo {
 }
 
 .page3-stars>a:focus {
-    color: red;
+    color: #dcd623;
 }
 
 .page3-over-view {
@@ -667,7 +680,7 @@ nav>.logo {
 }
 
 .page3-over-view>a>i:active {
-    color: red;
+    color: #959595;
     transition: all 0.3s;
 }
 
@@ -715,6 +728,26 @@ nav>.logo {
         opacity: 80%;
     }
 
+}
+
+.test1{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.01rem solid none;
+    overflow: hidden;
+    width: 0px;
+    height: 70px;
+    position: relative;
+    left: -39vw;
+    top: 17vh;
+}
+
+.page4{
+    width: 100vw;
+    /* change in future */
+    height: 100vh;
+    background-color: transparent;
+    z-index: 3;
 }
 
 @media only screen and (max-width:1080px) {
