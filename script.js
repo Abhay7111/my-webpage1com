@@ -51,3 +51,69 @@ gsap.to(".page2",{
         top:"120px",
     },
 })
+
+
+
+// this is for stars 
+
+var starsdiv = document.querySelector("#stars-link1")
+var stars = document.querySelector("#star1")
+var stars1 = 0
+stars.addEventListener("click",function(){
+    if(stars1 ==0){
+        starsdiv.style.color = "yellow"
+        stars1 = 1
+    }
+})
+
+var starsdiv2 = document.querySelector("#stars-link2")
+var stars = document.querySelector("#star2")
+var stars2 = 0
+stars.addEventListener("click",function(){
+    if(stars2 ==0){
+        starsdiv2.style.color = "yellow"
+    }
+})
+
+var starsdiv3 = document.querySelector("#stars-link3")
+var stars = document.querySelector("#star3")
+var stars3 = 0
+stars.addEventListener("click",function(){
+    if(stars3 ==0){
+        starsdiv3.style.color = "yellow"
+    }
+})
+
+var starsdiv4 = document.querySelector("#stars-link4")
+var stars = document.querySelector("#star4")
+var stars4 = 0
+stars.addEventListener("click",function(){
+    if(stars4 ==0){
+        starsdiv4.style.color = "yellow"
+    }
+})
+
+var starsdiv5 = document.querySelector("#stars-link5")
+var stars = document.querySelector("#star5")
+var stars5 = 0
+stars.addEventListener("click",function(){
+    if(stars5 ==0){
+        starsdiv5.style.color = "yellow"
+    }
+})
+
+
+
+var Subscribeicon = document.querySelector("#Subscribe1")
+
+var change1 = document.querySelector("#a-span1")
+
+var point1 = 0
+Subscribeicon.addEventListener("click",function(){
+    if(point1 ==0){
+        change1.innerHTML = "Subscribed"
+        change1.style.color = "red"
+        point1 = 1
+        Subscribeicon.style.color = "red"
+    }
+})
