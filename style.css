@@ -12,10 +12,15 @@
     color: #000;
 }
 
-html,
+html{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body {
     background-color: #dadada;
-    width: 100vw;
+    width: 1400px;
     height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -173,7 +178,7 @@ nav>.logo {
 
 .page1 {
     width: 100vw;
-    height: 93vh;
+    height: 93%;
     /* background-color: green; */
     display: flex;
     align-items: center;
