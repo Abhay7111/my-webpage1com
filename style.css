@@ -844,11 +844,37 @@ nav>.logo {
     }
     
     .desktop-none>h1{
-        border: 1px solid #fff;
+        border: 1px solid #ffffff;
         padding: 60% 10px;
         width: 90%;
         border-radius: 20px;
+        color: #656565;
+        animation: phone1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+    }
 
+    .desktop-none>h1>#span1{
+        color: rgb(117, 74, 74);
+        animation: phone1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+    }
+
+    .desktop-none>h1>#span2{
+        color: #646464;
+        animation: phone1;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+    }
+
+    @keyframes phone1 {
+        50%{
+            color: #fff;
+        }
     }
     
     header{
