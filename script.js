@@ -18,8 +18,8 @@ gsap.to("header",{
         trigger:"header",
         scroller:"body",
         // markers:"true",
-        start:"top -5%",
-        end:"top -10%",
+        start:"top -0px",
+        end:"top -1px",
         scrub:1,
         top:"120px",
     },
@@ -31,24 +31,24 @@ gsap.to("#main",{
         trigger:"#main",
         scroll:".page1",
         // markers:"true",
-        start:"top 10%",
-        end:"top -20%",
-        scrub:2,
+        start:"top 10px",
+        end:"top 100px",
+        scrub:1,
     }
 })
 
 gsap.to(".page2",{
-    backgroundColor :"#000",
-    height:"100vh",
+    backgroundColor :"transparent",
+    top:"-100vh",
     duration:0.5,
     scrollTrigger:{
         trigger:".page2",
         scroller:"body",
         // markers:"true",
         start:"top -50px",
-        end:"top -100px",
-        scrub:2,
-        top:"120px",
+        end:"top -1000px",
+        scrub:2.4,
+        bottom:"1200px",
     },
 })
 
