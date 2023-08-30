@@ -39,7 +39,7 @@ gsap.to("#main",{
 
 gsap.to(".page2",{
     backgroundColor :"transparent",
-    top:"-100vh",
+    top:"-90vh",
     duration:0.5,
     scrollTrigger:{
         trigger:".page2",
@@ -48,10 +48,20 @@ gsap.to(".page2",{
         start:"top -50px",
         end:"top -1000px",
         scrub:2.4,
-        bottom:"1200px",
     },
 })
 
+gsap.to("#page3-main-box",{
+    backgroundColor : "red",
+    top:"20vh",
+    scrollTrigger:{
+        trigger:"#page3-main-box",
+        scroller:"body",
+        start:"top -50px",
+        end:"top -50px",
+        scrub:2.5,
+    },
+})
 
 
 // this is for stars 
