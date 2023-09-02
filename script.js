@@ -38,11 +38,11 @@ gsap.to("#main",{
 })
 
 gsap.to(".footer",{
-    backgroundColor:"#fff",
+    backgroundColor:"transparent",
     scrollTrigger:{
         trigger:".footer",
         scroll:".footer",
-        markers:"true",
+        // markers:"true",
         start:"top 730px",
         end:"top 250px",
         scrub:0.1,
@@ -50,7 +50,7 @@ gsap.to(".footer",{
 })
 
 gsap.to("footer",{
-    backgroundColor:"#000"
+    backgroundColor:"transparent"
 })
 
 gsap.to(".page2",{

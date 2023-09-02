@@ -866,6 +866,27 @@ nav>.logo {
     }
 
 }
+.space-px{
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+}
+.pdf1{
+    width: 100%;
+    /* background-color: red; */
+    height: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pdf1>embed{
+    width: 85%;
+    height: 110%;
+    background-color: red;
+}
 
 .footer{
     background-color: transparent;
@@ -885,7 +906,6 @@ nav>.logo {
     height: 1px;
 }
 footer{
-    background-color: #fff;
     width: 99%;
     height: 470px;
 }
