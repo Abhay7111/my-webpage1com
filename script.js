@@ -12,6 +12,7 @@ document.addEventListener("mousemove",function(dets){
 
 gsap.to("header",{
     backgroundColor :"#fff",
+    
     height:"70px",
     duration:0.5,
     scrollTrigger:{
@@ -63,7 +64,7 @@ gsap.to(".page2",{
         // markers:"true",
         start:"top -50px",
         end:"top -1000px",
-        scrub:2.4,
+        scrub:1,
     },
 })
 
