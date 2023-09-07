@@ -946,27 +946,47 @@ nav>.logo {
 
 .footer{
     background-color: transparent;
-    width: 100%;
-    height: 500px;
-    padding-top: 1px;
-    /* border-radius: 10px; */
-    overflow: hidden;
     display: flex;
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    border-top:2px solid #fff ;
+    z-index: 90;
+}
+
+footer{
+    width: 100vw;
+    height: 60vh;
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-#footer-hr1{
-    width: 95%;
-    height: 1px;
-}
-footer{
-    width: 99%;
-    height: 470px;
+footer>h2{
+    font-size: 3vw;
 }
 
-@media only screen and (max-width:1080px) {
+
+footer>p{
+    font-size: 1.2vw;
+}
+
+.main-rapper{
+    background-color: transparent;
+    width: 100%;
+    height: 43vh;
+}
+
+
+.inner-rapper{
+    width: 30vw;
+    height: 100%;
+    background-color: yellow;
+}
+
+@media only screen and (max-width:366px) {
     .phone1{
         display: block;
         width: 100vw;
